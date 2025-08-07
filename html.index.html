@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsitektur Memori dalam Sistem Komputer</title>
+  <p style="margin-top: 16px; font-size: 13px;"><strong>Ditulis oleh : Ikhwan Ukasyah Nabighah</strong></p>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #79a0df;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(to right, #283e51, #485563);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgb(0, 0, 0);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: 1px;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #000000;
+      border-bottom: 2px solid #817d7d;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.8;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arsitektur Memori dalam Sistem Komputer</h1>
+  </header>
+
+  <main>
+    <p>Pada sistem komputer modern, memori merupakan bagian yang sangat penting karena berperan dalam menyimpan data dan instruksi yang dibutuhkan oleh prosesor. Dalam video ini, pembahasan difokuskan pada bagaimana arsitektur memori disusun secara hierarkis agar bisa menunjang kinerja komputer secara optimal.</p>
+
+    <h2>1. Hierarki Memori</h2>
+    <p>Sistem memori tidak hanya terdiri dari satu jenis, melainkan tersusun dalam tingkatan atau hierarki. Mulai dari register di dalam CPU (yang paling cepat dan paling kecil kapasitasnya), dilanjutkan ke cache (biasanya terbagi menjadi L1, L2, dan L3), kemudian RAM sebagai memori utama, hingga akhirnya ke media penyimpanan seperti SSD atau HDD.</p>
+    <p>Tujuan utama dari hierarki ini adalah untuk menyeimbangkan antara kecepatan akses data dan biaya. Memori yang lebih cepat umumnya lebih mahal, sehingga hanya digunakan untuk data yang sering diakses.</p>
+
+    <h2>2. Peran Register dan Cache</h2>
+    <p>Register berada langsung di dalam prosesor dan digunakan untuk menyimpan data sementara selama instruksi dijalankan. Contohnya seperti PC (Program Counter), IR (Instruction Register), MAR (Memory Address Register), dan MBR (Memory Buffer Register).</p>
+    <p>Cache bertindak sebagai penengah antara CPU dan RAM. Karena kecepatan RAM lebih lambat daripada CPU, cache menyimpan data atau instruksi yang kemungkinan besar akan dibutuhkan dalam waktu dekat, sehingga bisa diakses lebih cepat. Konsep ini dikenal dengan locality of reference, yang terbagi menjadi locality temporal dan spatial.</p>
+
+    <h2>3. Memori Utama dan Penyimpanan Sekunder</h2>
+    <p>RAM (Random Access Memory) adalah tempat utama penyimpanan data selama komputer bekerja. RAM bersifat volatile, artinya data akan hilang ketika komputer dimatikan. Berbeda dengan itu, penyimpanan sekunder seperti HDD dan SSD digunakan untuk menyimpan data dalam jangka panjang.</p>
+    <p>SSD lebih cepat dibanding HDD karena menggunakan memori flash, sedangkan HDD masih menggunakan piringan magnetik. Walaupun SSD lebih mahal, namun penggunaannya semakin umum karena kecepatan akses yang jauh lebih tinggi.</p>
+
+    <h2>4. Sistem Bus</h2>
+    <p>Agar CPU bisa berkomunikasi dengan memori dan perangkat lainnya, digunakan sistem bus yang terdiri dari tiga jenis utama:</p>
+    <ul>
+    <li><strong>Data bus</strong>: mengirim dan menerima data</li>
+    <li><strong>Address bus</strong>: membawa alamat memori</li>
+    <li><strong>Control bus</strong>: mengatur sinyal kontrol seperti baca/tulis</li>
+    </ul>
+    <p>Desain bus yang baik sangat memengaruhi efisiensi transfer data antar komponen dalam sistem.</p>
+
+    <h2>5. Pengaruh Arsitektur Memori terhadap Kinerja</h2>
+    <p>Semakin efisien arsitektur memori, semakin cepat pula proses komputasi berlangsung. Penggunaan cache, register, dan teknik manajemen memori yang tepat dapat mengurangi waktu tunggu prosesor. Tanpa arsitektur memori yang baik, CPU akan sering menunggu data yang belum siap, sehingga menurunkan performa sistem secara keseluruhan.</p>
+
+    <h2>Kesimpulan</h2>
+    <p>Arsitektur memori merupakan pondasi penting dalam sistem komputer. Pemahaman mengenai bagaimana memori bekerja dan saling terhubung antara satu jenis dengan yang lainnya, sangat berpengaruh terhadap desain dan efisiensi suatu perangkat komputer. Materi ini sangat penting dipahami terutama bagi mahasiswa teknik komputer dan informatika karena menjadi dasar dalam memahami kerja prosesor, sistem operasi, hingga performa aplikasi.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Blog Edukasi Komputer – Dibuat berdasarkan rangkuman materi dari video Ahmad Chusyairi
+  </footer>
+</body>
+</html>
